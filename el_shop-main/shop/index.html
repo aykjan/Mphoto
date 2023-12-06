@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css"> -->
+    <link rel="stylesheet" href="./css/magazin.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <div class="logo">
+            <h1>M.photo</h1>
+        </div>
+        <div class="header__input">
+            <input class="header__input-item" type="text" id="searchInput" placeholder="Поиск товара">
+            <img class="input__icon" src="./img/loupe_27u9x6jxq96z.svg">
+        </div>
+    </div>
+
+    <div class="subheader">
+        <nav class="subheader__nav">
+            <a href="#">Все акции</a>
+            <a href="#">Ноутбуки</a>
+            <a href="#">Игровые приставки</a>
+            <a href="#">Телевизоры</a>
+            <a href="#">Телефоны</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="slaider">
+            <div class="container_slaider">
+                <div class="dop__continer_slider">
+                    <img class="slaider_photo"
+                        src="https://cms.mvideo.ru/magnoliaPublic/.imaging/webp/dam/ad1a3559-44c8-46c8-9634-f074aac92830"
+                        alt="">
+                    <img class="slaider_photo"
+                        src="https://cms.mvideo.ru/magnoliaPublic/.imaging/webp/dam/1abaff19-25cd-4b39-97b9-242ce4854ad8"
+                        alt="">
+
+                </div>
+
+
+                <div class="lefttap__slaider" onclick="plusSlides(-1)">
+                    <button class="left__slaider" >
+                        <img class="left__slaider__img" src='img/left__strelka.png' alt="">
+                    </button>
+                </div>
+
+                <div class="rigthtap__slaider" onclick="plusSlides(1)">
+                    <button class="rigth__slaider">
+                        <img class="rigth__slaider__img" src="img/rigth_slidert.png" alt="">
+                    </button>
+                </div>
+
+
+        </section>
+        <section class="cards">
+            <div class="cards__container container">
+
+
+                <!-- card -->
+                <a class="card" id="search" href="#">
+                    <div class="card__img">
+                        <img class="card__img-item"
+                            src="https://avatars.mds.yandex.net/get-mpic/4742551/img_id6575521469263677970.jpeg/600x800"
+                            alt="Телевизор Philips">
+                    </div>
+                    <div class="card__title">
+                        <h2>Телевизор Philips 50PUS8108/60, 4K Ultra HD, Ambilight</h2>
+                    </div>
+                    <div class="card__cost">
+                        <p><b>38.590 ₽</b></p>
+                    </div>
+                </a>
+                <!-- /card -->
+
+
+                <!-- card -->
+                <a class="card" href="#">
+                    <div class="card__img">
+                        <img class="card__img-item" src="./img/10031156b.jpg" alt="Телевизор Philips">
+                    </div>
+                    <div class="card__title">
+                        <h2>Телевизор Samsung UE43AU7500U</h2>
+                    </div>
+                    <div class="card__cost">
+                        <p><b>29 999 ₽</b></p>
+                    </div>
+                </a>
+                <!-- /card -->
+
+
+                <!-- card -->
+                <a class="card" href="#">
+                    <div class="card__img">
+                        <img class="card__img-item"
+                            src="https://avatars.mds.yandex.net/get-mpic/4742551/img_id6575521469263677970.jpeg/600x800"
+                            alt="Телевизор Philips">
+                    </div>
+                    <div class="card__title">
+                        <h2>Телевизор Philips 50PUS8108/60, 4K Ultra HD, Ambilight</h2>
+                    </div>
+                    <div class="card__cost">
+                        <p><b>38.590 ₽</b></p>
+                    </div>
+                </a>
+                <!-- /card -->
+
+
+                <!-- card -->
+                <a class="card" href="#">
+                    <div class="card__img">
+                        <img class="card__img-item"
+                            src="https://avatars.mds.yandex.net/get-mpic/4742551/img_id6575521469263677970.jpeg/600x800"
+                            alt="Телевизор Philips">
+                    </div>
+                    <div class="card__title">
+                        <h2>Телевизор Philips 50PUS8108/60, 4K Ultra HD, Ambilight</h2>
+                    </div>
+                    <div class="card__cost">
+                        <p><b>38.590 ₽</b></p>
+                    </div>
+                </a>
+                <!-- /card -->
+
+
+
+
+                <!-- card -->
+                <a class="card" href="#">
+                    <div class="card__img">
+                        <img class="card__img-item"
+                            src="https://avatars.mds.yandex.net/get-mpic/4742551/img_id6575521469263677970.jpeg/600x800"
+                            alt="Телевизор Philips">
+                    </div>
+                    <div class="card__title">
+                        <h2>Телевизор Philips 50PUS8108/60, 4K Ultra HD, Ambilight</h2>
+                    </div>
+                    <div class="card__cost">
+                        <p><b>38.590 ₽</b></p>
+                    </div>
+                </a>
+                <!-- /card -->
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <a class="footer__logo logo" href="#header">M.photo</a>
+        </div>
+        <div class="footer__nav">
+            <div class="footer__nav-items">
+                <!-- btn -->
+                <p class="footer__nav-item" name="about-us" onclick="OpenModalWindow(this.getAttribute('name'))">О нас
+                </p>
+
+                <!-- btn -->
+                <p class="footer__nav-item" name="license-agreement"
+                    onclick="OpenModalWindow(this.getAttribute('name'))">Лицензионное соглашение</p>
+
+                <!-- btn -->
+                <p class="footer__nav-item" name="terms-of-use" onclick="OpenModalWindow(this.getAttribute('name'))">
+                    Пользовательское соглашение</p>
+
+                <!-- btn -->
+                <a class="footer__nav-item" href="tel:+89187654321">+8 (918) 765-43-21</a>
+            </div>
+
+
+            <!-- modal window -->
+            <div class="modal__window hidden">
+                <button class="close-modal-window">&times;</button>
+                <h2 class="title__modal-window"></h2>
+                <p class="description__modal-window"></p>
+            </div>
+            <div class="overlay hidden"></div>
+
+
+        </div>
+    </footer>
+</body>
+<script src="./script/main.js"></script>
+
+</html>
